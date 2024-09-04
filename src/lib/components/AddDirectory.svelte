@@ -96,13 +96,13 @@
 				</div>
 
 				<!-- Conditional rendering of images based on selection -->
-				{#if selectedOption === LABELS.FILE}
+				<!-- {#if selectedOption === LABELS.FILE}
 					<img src={selectedImage1.src} alt={selectedImage1.alt} class="w-20 h-20" />
 				{:else if selectedOption === LABELS.DIRECTORY}
 					<img src={selectedImage2.src} alt={selectedImage2.alt} class="w-20 h-20" />
 				{/if}
 
-				<p>{inputValue}</p>
+				<p>{inputValue}</p> -->
 			</div>
 		</div>
 	</div>

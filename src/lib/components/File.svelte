@@ -4,7 +4,7 @@
 
 	let images = {};
 	const imageKey1 = 'img3';
-	const imageKey2 = 'img6';
+	const imageKey2 = 'img4';
 
 	// Subscribe to imageStore to get images
 	const unsubscribe = imageStore.subscribe((value) => {
@@ -23,19 +23,13 @@
 	<div class="flex justify-between mx-5 items-center">
 		<div>
 			<p>{name}</p>
-			<div class="flex gap-5">
-				<div class="flex gap-2">
-					<img src={selectedImage1.src} alt={selectedImage1.alt} />
-					<p>{count}</p>
-				</div>
-				<div class="flex gap-2">
-					<img src={selectedImage2.src} alt={selectedImage2.alt} />
-					<p>{count}</p>
-				</div>
+			<div class="flex gap-2 h-6 w-7 mt-1">
+				<img src={selectedImage1.src} alt={selectedImage1.alt} />
+				<p>{count}2</p>
 			</div>
 		</div>
 		<div>
-			<img src="images/info.svg" alt="Info Icon" />
+			<img src={selectedImage2.src} alt="Info Icon" />
 		</div>
 	</div>
 </main>
